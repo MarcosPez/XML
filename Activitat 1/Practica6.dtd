@@ -1,0 +1,17 @@
+<!ELEMENT botiga (clients?,stock?)>
+<!ELEMENT clients (client*)>
+<!ELEMENT client (nom, cognom+, Id, compra)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT Id (#PCDATA)>
+<!ELEMENT compra (#PCDATA)>
+<!ELEMENT stock (producte*)>
+<!ELEMENT producte (nom, marca, preu)>
+<!ELEMENT nomprod (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ATTLIST client id ID #REQUIRED>
+<!ATTLIST compra ref IDREF #REQUIRED>
+<!ATTLIST producte id ID #REQUIRED>
+<!ATTLIST Id tipus CDATA #REQUIRED>
+<!ATTLIST Id tipus (NIF|NIE) "NIF">

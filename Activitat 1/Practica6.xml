@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE botiga SYSTEM "Practica6.dtd"> 
+<botiga>
+    <clients>
+        <client id="u">
+            <nom> Joan </nom>
+            <cognom> Puig </cognom>
+            <Id tipus="NIF"> 956394610L </Id>
+            <compra ref="sis-cents_cinquanta-nou"/>
+        </client>
+        <client id="dos">
+            <nom> Pere </nom>
+            <cognom> Bernat </cognom>
+            <Id tipus="NIE"> 8659385812K </Id>
+            <compra ref="tres-cents_cinquanta"/>
+        </client>
+        <client id="tres">
+            <nom> Laura </nom>
+            <cognom> Pérez </cognom>
+            <Id tipus="NIF"> 967382901P </Id>
+            <compra ref="quatre-cents_cinquanta-sis"/>
+        </client>
+    </clients>
+    <stock>
+        <producte id="sis-cents_cinquanta-nou">
+            <nom> Samsung Galaxy S22 </nom>
+            <marca> Samsung </marca>
+            <preu> 480 € </preu>
+        </producte>
+        <producte id="tres-cents_cinquanta">
+            <nom> iPhone 12 </nom>
+            <marca> Apple </marca>
+            <preu> 381 €</preu>
+        </producte>
+        <producte id="quatre-cents_cinquanta-sis">
+            <nom> Samsung Galaxy A54 </nom>
+            <marca> Samsung </marca>
+            <preu> 399 € </preu>
+        </producte>
+    </stock>
+</botiga>
+
+
+<!--CORRECCIÓ
+
+Van realitzar el document com un html, en compte d'un xml, ja que van posar al principi -> <!DOCTYPE html> i <html> i els vam canviar per <?xml> 
+
+Els valors de <preu> contenien text i els hem cambiat pel símbol de l'euro per simplificar-ho una mica.
+
+-->
